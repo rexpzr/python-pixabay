@@ -5,6 +5,7 @@ Python 3 interface to Pixabay API.
 SYNOPSIS
 ---
 ```python3
+
 from python_pixabay import Pixabay
 
 pix = Pixabay('my_pixabay_api_key')
