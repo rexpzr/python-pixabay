@@ -18,9 +18,7 @@ print(img_search)
 print(vid_search)
 
 # custom image search
-
-cis = pix.image_search(q = 'cats dogs',
-					   lang = 'es',
+cis = pix.image_search(q = 'cats dogs',  lang = 'es',
 					   response_group = 'high_resolution',
 					   image_type = 'photo',
 					   orientation = 'horizontal',
@@ -35,14 +33,12 @@ print(cis)
 
 # custom video search
 
-cvs = pix.video_search(q = 'cats',
-					   lang = 'fr',
+cvs = pix.video_search(q = 'cats', lang = 'fr',
 					   video_type = 'animation',
 					   category = 'animals',
 					   page = 1,
 					   per_page = 4
 					   )
-
 print(cvs)
 
 ```
