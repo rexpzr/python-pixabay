@@ -1,9 +1,7 @@
-python-pixabay
----
+### python-pixabay
 Python 3 interface to Pixabay API.
 
-SYNOPSIS
----
+### SYNOPSIS
 ```python3
 
 from python_pixabay import Pixabay
@@ -47,8 +45,8 @@ cvs = pix.video_search(q = 'cats',
 					   )
 
 print(cvs)
+
 ```
 
-SEE ALSO
----
+### SEE ALSO
 [Pixabay API documentations](https://pixabay.com/api/docs)
