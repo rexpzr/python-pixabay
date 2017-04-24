@@ -1,6 +1,9 @@
 ### python-pixabay
 Python 3 interface to Pixabay API.
 
+### Dependencies
+* requests
+
 ### SYNOPSIS
 ```python
 from python_pixabay import Pixabay
