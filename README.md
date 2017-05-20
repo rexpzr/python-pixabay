@@ -1,8 +1,8 @@
 ### python-pixabay
-Python 3 interface to Pixabay API.
+Python 2 & 3 interface to Pixabay API.
 
-### Dependencies
-* requests
+### Install from PyPi 
+`pip install python-pixabay`
 
 ### SYNOPSIS
 ```python

@@ -1,2 +1,7 @@
 *.pyc
 __pycache__
+*.komodoproject
+build/
+dist/
+*.egg-info
+MANIFEST
