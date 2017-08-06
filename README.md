@@ -21,27 +21,26 @@ print(img_search)
 print(vid_search)
 
 # custom image search
-cis = pix.image_search(q = 'cats dogs',  lang = 'es',
-					   response_group = 'high_resolution',
-					   image_type = 'photo',
-					   orientation = 'horizontal',
-					   category = 'animals',
-					   safesearch = 'true',
-					   order = 'latest',
-					   page = 2,
-					   per_page = 3
-					   )
+cis = pix.image_search(q = 'cats dogs',
+                       lang = 'es',
+                       response_group = 'high_resolution',
+                       image_type = 'photo',
+                       orientation = 'horizontal',
+                       category = 'animals',
+                       safesearch = 'true',
+                       order = 'latest',
+                       page = 2,
+                       per_page = 3)
 
 print(cis)
 
 # custom video search
 
 cvs = pix.video_search(q = 'cats', lang = 'fr',
-					   video_type = 'animation',
-					   category = 'animals',
-					   page = 1,
-					   per_page = 4
-					   )
+                       video_type = 'animation',
+                       category = 'animals',
+                       page = 1,
+                       per_page = 4)
 print(cvs)
 
 ```
