@@ -4,7 +4,7 @@ Python 2 & 3 interface to Pixabay API.
 ### Install from PyPi 
 `pip install python-pixabay`
 
-### SYNOPSIS
+### Synopsis
 ```python
 from python_pixabay import Pixabay
 
@@ -44,6 +44,14 @@ cvs = pix.video_search(q = 'cats', lang = 'fr',
 print(cvs)
 
 ```
+
+### Running the test
+
+> Make sure you set PIXABAY_KEY environment variable with your pixabay api key assigned before running the command below
+
+* Via Python unittest's discover: `python3 -m unittest discover test`
+
+* or Via nose: `nosetests`
 
 ### SEE ALSO
 [Pixabay API documentations](https://pixabay.com/api/docs)
