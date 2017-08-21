@@ -6,9 +6,9 @@ Python 2 & 3 interface to Pixabay API.
 
 ### Synopsis
 ```python
-from python_pixabay import Pixabay
+import python_pixabay
 
-pix = Pixabay('my_pixabay_api_key')
+pix = python_pixabay.Pixabay('my_pixabay_api_key')
 
 # default image search
 img_search = pix.image_search()
@@ -51,7 +51,7 @@ print(cvs)
 
 * Via Python unittest's discover: `python3 -m unittest discover test`
 
-* or Via nose: `nosetests`
+* or via nose: `nosetests`
 
 ### SEE ALSO
 [Pixabay API documentations](https://pixabay.com/api/docs)
