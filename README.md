@@ -5,7 +5,7 @@ Python 2 & 3 interface to Pixabay API.
 `pip install python-pixabay`
 
 ### Online python-pixabay documentation
-https://faraco.github.io/html/index.html
+https://faraco.github.io/python-pixabay/html/index.html
 
 ### Synopsis
 
