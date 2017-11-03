@@ -5,6 +5,7 @@ Python 2 & 3 interface to Pixabay API.
 `pip install python-pixabay`
 
 ### Synopsis
+
 ```python
 import python_pixabay
 
