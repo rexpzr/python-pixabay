@@ -4,6 +4,9 @@ Python 2 & 3 interface to Pixabay API.
 ### Install from PyPi 
 `pip install python-pixabay`
 
+### Online python-pixabay documentation
+https://faraco.github.io/html/index.html
+
 ### Synopsis
 
 ```python
@@ -50,7 +53,7 @@ print(cvs)
 
 > Make sure you set PIXABAY_KEY environment variable with your pixabay api key assigned before running the command below
 
-* Via Python unittest's discover: `python3 -m unittest discover test`
+* Via Python unittest's discover: `python -m unittest discover test`
 
 * or via nose: `nosetests`
 
