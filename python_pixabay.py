@@ -106,7 +106,7 @@ class Pixabay:
                 }
         
         resp = get(self.root_url, params=payload)
-        #return the json object if the API call is successful, otherwise return the raw response with the HTTP status code
+        #return the json object if the API call is successful, otherwise raise an error with the raw response with the HTTP status code
         if resp.status_code == 200:
             return resp.json()
         else:
