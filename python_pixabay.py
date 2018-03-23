@@ -1,7 +1,5 @@
 from requests import get
 
-root_url="https://pixabay.com/api/"
-
 class Pixabay:
     """
         @brief Handle Pixabay video and image searches
@@ -11,8 +9,11 @@ class Pixabay:
         """Constructor
            @param api_key <b>str</b> Your Pixabay API key.
            @see https://pixabay.com/en/accounts/register/ to register and get an API key.
+           
+           @param root_url: URL for Pixabay API
         """
         self.api_key = api_key
+        self.root_url = "https://pixabay.com/api/"
 
     def image_search(self, q='yellow flower', lang='en', id='',
                            response_group='image_details',
@@ -104,7 +105,12 @@ class Pixabay:
                 'callback': callback, 'pretty': pretty
                 }
         
-        return get(root_url, params=payload).json()
+        resp = get(self.root_url, params=payload)
+        #return the json object if the API call is successful, otherwise raise an error with the raw response with the HTTP status code
+        if resp.status_code == 200:
+            return resp.json()
+        else:
+            raise ValueError(resp.text)
 
     def video_search(self, q='yellow flower',
                            lang='en',
@@ -186,4 +192,8 @@ class Pixabay:
                 'order': order, 'page': page, 'per_page': per_page,
                 'callback': callback, 'pretty': pretty}
 
-        return get(root_url + "videos/", params=payload).json()
+        resp = get(self.root_url + "videos/", params=payload)
+        if resp.status_code == 200:
+            return resp.json()
+        else:
+            raise ValueError(resp.text)
