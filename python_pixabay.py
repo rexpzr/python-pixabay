@@ -22,6 +22,7 @@ class Pixabay:
                            category='',
                            min_width=0,
                            min_height=0,
+                           colors='',
                            editors_choice='false',
                            safesearch='false',
                            order='popular',
@@ -66,6 +67,10 @@ class Pixabay:
     
             @param min_height <b>int</b> Minimum image height. <br>
             Default: 0
+            
+            @param colors <b>str</b> Filter images by color properties. A comma separated list of values may be used to select multiple properties. <br>
+            Accepted values: "grayscale", "transparent", "red", "orange", "yellow", "green", "turquoise", "blue", "lilac", "pink", "white", "gray", "black", "brown"<br>
+            Default: " "
 
             @param editors_choice <b>bool</b> Select images that have received an Editor's Choice award.<br>
             Accepted values: "true", "false"<br>
@@ -100,6 +105,7 @@ class Pixabay:
                 'response_group': response_group, 'image_type': image_type,
                 'orientation': orientation, 'category': category,
                 'min_width': min_width, 'min_height': min_height,
+                'colors': colors,
                 'editors_choice': editors_choice, 'safesearch': safesearch,
                 'order': order, 'page': page, 'per_page': per_page,
                 'callback': callback, 'pretty': pretty
